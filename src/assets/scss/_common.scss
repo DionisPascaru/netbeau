@@ -1,0 +1,12 @@
+:root {
+    --base-color: '#000';
+    --text-color: '#fff';
+}
+
+body {
+    background-color: $--base-color;
+}
+
+h1 {
+    color: $--text-color;
+}
