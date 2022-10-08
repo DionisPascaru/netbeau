@@ -1,11 +1,18 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <dark-light-component></dark-light-component>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
+import DarkLightComponent from './components/common/DarkLightModeComponent.vue';
 
 export default {
   name: 'App',
+  components: {
+    DarkLightComponent
+  }
 }
 </script>
 
