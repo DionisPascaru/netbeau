@@ -1,28 +1,45 @@
 <template>
   <div id="app">
-    <dark-light-component></dark-light-component>
-    <router-view></router-view>
+    <el-container>
+      <el-header>
+        <header-component></header-component>
+      </el-header>
+      <el-main>
+        <router-view></router-view>
+      </el-main>
+      <el-footer></el-footer>
+    </el-container>
   </div>
 </template>
 
 <script>
-import DarkLightComponent from './components/common/DarkLightModeComponent.vue';
+import HeaderComponent from './components/common/HeaderComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    DarkLightComponent
+    HeaderComponent
   }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.el-header {
+  padding: 0;
+  height: auto !important;
+}
+.el-main {
+  padding: 0;
+}
+.el-footer {
+  padding: 0;
 }
 </style>

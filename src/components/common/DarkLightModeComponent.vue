@@ -1,5 +1,8 @@
 <template>
-    <button @click="this.switcher">switcher</button>
+    <div class="mode-switcher" @click="this.switcher">
+        <i v-if="this.modeValue" class="icon-moon"></i>
+        <i v-else class="icon-sun"></i>
+    </div>
 </template>
 
 <script>
