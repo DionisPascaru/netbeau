@@ -1,12 +1,53 @@
 :root {
-    --base-color: '#000';
-    --text-color: '#fff';
+    --base-color: #000;
+    --second-color: #fff;
 }
 
 body {
     background-color: $--base-color;
+    margin: 0;
 }
 
 h1 {
-    color: $--text-color;
+    color: $--second-color;
+}
+
+.container {
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    @include for-sm {
+        max-width: 540px;
+    }
+
+    @include for-md {
+        max-width: 720px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @include for-lg {
+        max-width: 960px;
+    }
+
+    @include for-xl {
+        max-width: 1140px;
+    }
+
+    @include for-xxl {
+        max-width: 1440px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.logo {
+    img {
+        width: 120px;
+    }
+
+    a {
+        display: flex;
+    }
 }
