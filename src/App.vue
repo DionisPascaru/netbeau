@@ -32,9 +32,11 @@ export default {
   padding: 0;
   height: auto !important;
 }
+
 .el-main {
   padding: 0;
 }
+
 .el-footer {
   padding: 0;
 }

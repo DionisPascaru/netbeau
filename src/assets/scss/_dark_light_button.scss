@@ -1,18 +1,18 @@
 .mode-switcher {
-    background-color: $--second-color;
-    width: 28px;
-    height: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+  background-color: $--second-color;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 
-    i {
-        font-size: 16px;
-        color: $--base-color;
-    }
+  i {
+    font-size: 16px;
+    color: $--base-color;
+  }
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }

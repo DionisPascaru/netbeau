@@ -5,24 +5,38 @@ $--dark-grey: #484848;
 $--light-grey: #808080;
 
 
-/** ------ RESPONSIVE BREACK POINTS ----- **/
+/** ------ RESPONSIVE BREAK POINTS ----- **/
 /** ------ Small screen ------ **/
 @mixin for-sm {
-    @media screen and (min-width: 576px) { @content; }
+  @media screen and (min-width: 576px) {
+    @content;
+  }
 }
+
 /** ------ Medium screen ------ **/
 @mixin for-md {
-    @media screen and (min-width: 768px) { @content; }
+  @media screen and (min-width: 768px) {
+    @content;
+  }
 }
+
 /** ------ Large screen ------ **/
 @mixin for-lg {
-    @media screen and (min-width: 992px) { @content; }
+  @media screen and (min-width: 992px) {
+    @content;
+  }
 }
+
 /** ------ Extra Large screen ------ **/
 @mixin for-xl {
-    @media screen and (min-width: 1200px) { @content; }
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
 }
+
 /** ------ Extra extra Large screen ------ **/
 @mixin for-xxl {
-    @media screen and (min-width: 1400px) { @content; }
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
 }
