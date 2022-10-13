@@ -1,0 +1,95 @@
+/** ----- Typography styles ----- **/
+h1 {
+    color: $--second-color;
+    font-size: 40px;
+    line-height: 1;
+    text-align: start;
+    font-weight: 700;
+    margin: 20px 0;
+
+    @include for-md {
+        font-size: 70px;
+    }
+
+    @include for-xl {
+        font-size: 150px;
+    }
+}
+
+.section-mover {
+    text-align: end;
+    border-bottom: 2px solid $--second-color;
+    margin-top: 35px;
+    padding-bottom: 25px;
+    
+    span {
+        font-size: 14px;
+        font-weight: 600;
+        color: $--second-color;
+
+        @include for-md {
+            font-size: 16px;
+        }
+    }
+}
+
+/** paragraphs types **/
+.content {
+    text-align: start;
+}
+
+.label {
+    text-align: start;
+}
+
+.text-dark {
+    color: $--dark-grey;
+    font-size: 12px;
+    font-weight: 600;
+
+    @include for-md {
+        font-size: 14px;
+    }    
+}
+
+.text-deep {
+    color: $--light-grey;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @include for-md {
+        font-size: 16px;
+    }
+}
+
+.text-normal {
+    color: $--second-color;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @include for-md {
+        font-size: 24px;
+    }
+
+    @include for-xl {
+        margin-top: 10px;
+    }
+}
+
+.text-obvious {
+    color: $--second-color;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @include for-md {
+        font-size: 50px;
+    }
+
+    @include for-xl {
+        font-size: 70px;
+        margin-top: 0;
+    }
+}

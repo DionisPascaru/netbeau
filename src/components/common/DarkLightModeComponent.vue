@@ -33,10 +33,10 @@ export default {
         },
         switchThemeMode() {
             const baseColor = this.modeValue ? '#fff' : '#000';
-            const textColor = this.modeValue ? '#000' : '#fff';
+            const secondColor = this.modeValue ? '#000' : '#fff';
 
             document.documentElement.style.setProperty('--base-color', baseColor);
-            document.documentElement.style.setProperty('--text-color', textColor);
+            document.documentElement.style.setProperty('--second-color', secondColor);
         },
         storeMode(key, value) {
             localStorage.setItem(key, value);
