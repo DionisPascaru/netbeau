@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import MenuComponent from '../common/MenuComponent.vue';
-import MobileMenuComponent from '../common/MobileMenuComponent.vue';
+import MenuComponent from './MenuComponent.vue';
+import MobileMenuComponent from './MobileMenuComponent.vue';
 
 export default {
   name: 'HeaderComponent',
