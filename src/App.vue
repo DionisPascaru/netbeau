@@ -7,18 +7,22 @@
       <el-main>
         <router-view></router-view>
       </el-main>
-      <el-footer></el-footer>
+      <el-footer>
+        <footer-component></footer-component>
+      </el-footer>
     </el-container>
   </div>
 </template>
 
 <script>
-import HeaderComponent from './components/common/HeaderComponent.vue';
+import HeaderComponent from './components/header/HeaderComponent.vue';
+import FooterComponent from "@/components/footer/FooterComponent";
 
 export default {
   name: 'App',
   components: {
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   }
 }
 </script>

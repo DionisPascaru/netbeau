@@ -6,7 +6,13 @@ $--light-grey: #808080;
 
 
 /** ------ RESPONSIVE BREAK POINTS ----- **/
-/** ------ Small screen ------ **/
+/** ------ Small small screen ------ **/
+@mixin for-ssm {
+  @media screen and (min-width: 420px) {
+    @content;
+  }
+}
+
 @mixin for-sm {
   @media screen and (min-width: 576px) {
     @content;

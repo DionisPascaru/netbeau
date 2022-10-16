@@ -12,14 +12,64 @@ h1 {
   color: $--second-color;
 }
 
+.items-list {
+  padding-left: 0;
+  list-style-type: none;
+
+  li {
+    border-top: 2px solid $--second-color;
+    font-size: 18px;
+    color: $--second-color;
+    padding: 20px 0;
+
+    @include for-md {
+      font-size: 24px;
+      padding: 35px 0;
+    }
+  }
+
+  @include for-md {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      width: calc(50% - 10px);
+
+      &:nth-child(odd) {
+        margin-right: 10px;
+      }
+
+      &:nth-child(even) {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
 .section {
-  padding: 30px 0;
+  margin-bottom: 30px;
+  padding: 25px 0;
+  border-bottom: 2px solid $--second-color;
+
+  @include for-md {
+    margin-bottom: 35px;
+    padding: 45px 0;
+  }
+
+  @include for-xl {
+    margin-bottom: 75px;
+    padding: 45px 0;
+  }
 }
 
 .container {
   margin: auto;
   padding-left: 10px;
   padding-right: 10px;
+
+  @include for-ssm {
+    max-width: 400px;
+  }
 
   @include for-sm {
     max-width: 540px;
@@ -56,6 +106,22 @@ h1 {
   }
 }
 
+.content {
+  margin-bottom: 70px;
+
+  @include for-md {
+    margin-bottom: 80px;
+  }
+
+  @include for-xl {
+    margin-bottom: 120px;
+  }
+}
+
+.border-none {
+  border: none;
+}
+
 /** ----- buttons style ----- **/
 .btn {
   font-size: 14px;
@@ -72,6 +138,16 @@ h1 {
   }
 }
 
-.pl-0 {
-  padding-left: 0 !important;
+.section-mover {
+  text-align: end;
+
+  span {
+    font-size: 14px;
+    font-weight: 600;
+    color: $--second-color;
+
+    @include for-md {
+      font-size: 16px;
+    }
+  }
 }
