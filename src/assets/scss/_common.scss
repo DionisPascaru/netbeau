@@ -124,6 +124,8 @@ h1 {
 
 /** ----- buttons style ----- **/
 .btn {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   font-weight: 700;
   border: 2px solid $--second-color;
@@ -136,10 +138,31 @@ h1 {
   @include for-md {
     font-size: 16px;
   }
+
+  i {
+    font-size: 14px;
+    margin-left: 10px;
+    transition: .5s ease-in-out;
+
+    &::before {
+      color: $--second-color;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    i {
+      transform: translateX(10px);
+    }
+  }
 }
 
 .section-mover {
-  text-align: end;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px 0;
 
   span {
     font-size: 14px;
@@ -148,6 +171,24 @@ h1 {
 
     @include for-md {
       font-size: 16px;
+    }
+  }
+
+  i {
+    font-size: 14px;
+    margin-left: 25px;
+    transition: 0.5s ease-in-out;
+
+    &::before {
+      color: $--second-color;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    i {
+      transform: translateY(5px);
     }
   }
 }
