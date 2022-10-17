@@ -85,3 +85,18 @@ h2 {
     margin: 0;
   }
 }
+
+.text-dingy {
+  color: $--second-color;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+
+  strong {
+    color: $--light-grey;
+  }
+
+  @include for-md {
+    font-size: 40px;
+  }
+}
