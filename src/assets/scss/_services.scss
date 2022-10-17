@@ -1,26 +1,68 @@
 .services {
+  .items-list {
+    .list-item {
+      display: flex;
+      align-items: center;
 
-  li {
-    display: flex;
-    align-items: center;
+      .icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgba($--light-grey, 0.2);
+        margin-right: 20px;
+
+        i {
+          font-size: 20px;
+
+          &::before {
+            color: $--second-color;
+          }
+        }
+      }
+    }
   }
 
-  .icon-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba($--light-grey, 0.2);
-    margin-right: 20px;
+  .text-dingy {
+    margin: 25px 0;
 
-    i {
-      font-size: 20px;
+    @include for-md {
+      margin: 30px 0;
+    }
 
-      &::before {
-        color: $--second-color;
-      }
+    @include for-xl {
+      margin: 0;
+    }
+  }
+
+  .services-items {
+    padding-bottom: 60px;
+
+    @include for-md {
+      padding-bottom: 80px;
+    }
+
+    @include for-xl {
+      padding-bottom: 120px;
+    }
+  }
+}
+
+.services-layout {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include for-xl {
+    gap: 30px;
+  }
+
+  .services-column {
+    width: 100%;
+
+    @include for-xl {
+      width: calc(50% - 15px);
     }
   }
 }
