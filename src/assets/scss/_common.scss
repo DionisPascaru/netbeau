@@ -47,18 +47,14 @@ h1 {
 }
 
 .section {
-  margin-bottom: 30px;
-  padding: 25px 0;
-  border-bottom: 2px solid $--second-color;
+  padding: 60px 0;
 
   @include for-md {
-    margin-bottom: 35px;
-    padding: 45px 0;
+    padding: 80px 0;
   }
 
   @include for-xl {
-    margin-bottom: 75px;
-    padding: 45px 0;
+    padding: 120px 0;
   }
 }
 
@@ -106,15 +102,17 @@ h1 {
   }
 }
 
-.content {
-  margin-bottom: 70px;
 
-  @include for-md {
-    margin-bottom: 80px;
-  }
+.border-bottom {
+  position: relative;
 
-  @include for-xl {
-    margin-bottom: 120px;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background-color: $--second-color;
   }
 }
 
@@ -162,7 +160,7 @@ h1 {
   display: flex;
   justify-content: end;
   align-items: center;
-  padding: 10px 0;
+  padding: 10px 0 40px;
 
   span {
     font-size: 14px;

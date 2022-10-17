@@ -1,0 +1,130 @@
+.about {
+  .about-description-left {
+    padding-top: 40px;
+
+    @include for-md {
+      padding-top: 60px;
+    }
+
+    @include for-xl {
+      padding: 120px 0;
+    }
+  }
+
+  .about-description-right {
+    padding-bottom: 60px;
+
+    @include for-md {
+      padding-bottom: 80px;
+    }
+
+    @include for-xl {
+      padding: 120px 0;
+    }
+  }
+
+  .about-team {
+    padding-top: 60px;
+
+    @include for-md {
+      padding-top: 80px;
+    }
+
+    @include for-xl {
+      padding: 120px 0;
+    }
+  }
+
+  .about-team-description {
+    padding: 60px 0;
+
+    @include for-md {
+      padding: 80px 0;
+    }
+
+    @include for-xl {
+      padding: 120px 0;
+    }
+  }
+
+  .about-clients {
+    padding-top: 60px;
+
+    @include for-md {
+      padding-top: 80px;
+    }
+
+    @include for-xl {
+      padding: 120px 0;
+    }
+  }
+
+  .about-clients-items {
+    padding-bottom: 60px;
+
+    .items-block {
+      margin: 0;
+    }
+
+    .item {
+      @include for-xl {
+        width: calc(25% - 8px);
+      }
+    }
+
+    @include for-md {
+      padding-bottom: 80px;
+    }
+
+    @include for-xl {
+      padding: 120px 0;
+    }
+  }
+
+  .about-statistics {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+
+    span {
+      font-family: 'Jost', sans-serif;
+      color: $--second-color;
+      font-size: 30px;
+      font-weight: 700;
+
+      @include for-md {
+        font-size: 50px;
+      }
+
+      @include for-xl {
+        font-size: 70px;
+      }
+    }
+
+    p {
+      margin-left: 15px;
+    }
+
+    .text-obvious {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.about-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @include for-md {
+    gap: 30px;
+  }
+
+  .about-column {
+    width: 100%;
+
+    @include for-md {
+      width: calc(50% - 15px);
+    }
+  }
+}

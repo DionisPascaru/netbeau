@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <section class="section">
+    <section class="border-bottom">
       <div class="page-heading">
         <h1>We create next generation websites.</h1>
       </div>
@@ -9,8 +9,8 @@
         <i class="icon-arrow-down"></i>
       </div>
     </section><!-- Page heading -->
-    <section class="section">
-      <div>
+    <section class="border-bottom">
+      <div class="section">
         <div class="label">
           <span class="text-dark">About Us</span>
         </div>
@@ -43,71 +43,74 @@
           </el-row>
         </div>
         <button class="btn" v-if="isMobile">Read more <i class="icon-arrow-right"></i></button>
-        <div class="section-mover">
-          <span>Favorite works</span>
-          <i class="icon-arrow-down"></i>
-        </div>
+      </div>
+      <div class="section-mover">
+        <span>Favorite works</span>
+        <i class="icon-arrow-down"></i>
       </div>
     </section><!-- About us -->
-    <section class="section">
-      <div class="label">
-        <span class="text-dark">Favorite Works</span>
-      </div>
-      <div class="portfolio-header">
-        <div>
-          <span>2008-2022</span>
-          <p class="text-normal">
-            Check out some of our selected works throughout history.
-          </p>
+    <section class="border-bottom">
+      <div class="section">
+        <div class="label">
+          <span class="text-dark">Favorite Works</span>
         </div>
-        <button class="btn">All works  <i class="icon-arrow-right"></i></button>
-      </div>
-      <div class="portfolio">
-        <portfolio-item-component image-url="yammino.png"
-                                  title="YAMMINO.MD"
-                                  description="Programming for Yammino.md">
-        </portfolio-item-component>
-        <portfolio-item-component image-url="yammino.png"
-                                  title="YAMMINO.MD"
-                                  description="Programming for Yammino.md">
-        </portfolio-item-component>
-        <portfolio-item-component image-url="yammino.png"
-                                  title="YAMMINO.MD"
-                                  description="Programming for Yammino.md">
-        </portfolio-item-component>
-        <portfolio-item-component image-url="yammino.png"
-                                  title="YAMMINO.MD"
-                                  description="Programming for Yammino.md">
-        </portfolio-item-component>
+        <div class="portfolio-header">
+          <div>
+            <span>2008-2022</span>
+            <p class="text-normal">
+              Check out some of our selected works throughout history.
+            </p>
+          </div>
+          <button class="btn">All works  <i class="icon-arrow-right"></i></button>
+        </div>
+        <div class="portfolio">
+          <portfolio-item-component image-url="yammino.png"
+                                    title="YAMMINO.MD"
+                                    description="Programming for Yammino.md">
+          </portfolio-item-component>
+          <portfolio-item-component image-url="yammino.png"
+                                    title="YAMMINO.MD"
+                                    description="Programming for Yammino.md">
+          </portfolio-item-component>
+          <portfolio-item-component image-url="yammino.png"
+                                    title="YAMMINO.MD"
+                                    description="Programming for Yammino.md">
+          </portfolio-item-component>
+          <portfolio-item-component image-url="yammino.png"
+                                    title="YAMMINO.MD"
+                                    description="Programming for Yammino.md">
+          </portfolio-item-component>
+        </div>
       </div>
       <div class="section-mover">
         <span>What we do</span>
         <i class="icon-arrow-down"></i>
       </div>
     </section><!-- Portfolio -->
-    <section class="section">
-      <div class="label">
-        <span class="text-dark">What we do</span>
+    <section class="border-bottom">
+      <div class="section">
+        <div class="label">
+          <span class="text-dark">What we do</span>
+        </div>
+        <el-row :gutter="20">
+          <el-col :lg="8">
+            <div>
+              <h2>Our services</h2>
+              <p class="text-deep">We leverage advanced technology to deliver solutions that exceed expectations.</p>
+              <button class="btn">Read more  <i class="icon-arrow-right"></i></button>
+            </div>
+          </el-col>
+          <el-col :lg="16">
+            <items-list-component></items-list-component>
+          </el-col>
+        </el-row>
       </div>
-
-      <el-row :gutter="20">
-        <el-col :lg="8">
-          <div>
-            <h2>Our services</h2>
-            <p class="text-deep">We leverage advanced technology to deliver solutions that exceed expectations.</p>
-            <button class="btn">Read more  <i class="icon-arrow-right"></i></button>
-          </div>
-        </el-col>
-        <el-col :lg="16">
-          <items-list-component></items-list-component>
-        </el-col>
-      </el-row>
       <div class="section-mover">
         <span>Our clients</span>
         <i class="icon-arrow-down"></i>
       </div>
     </section><!-- Services -->
-    <section class="section border-none">
+    <section class="section">
       <div class="label">
         <span class="text-dark">Our client</span>
       </div>
