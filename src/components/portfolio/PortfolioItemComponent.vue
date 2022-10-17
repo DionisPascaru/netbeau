@@ -5,6 +5,7 @@
       </div>
     <div class="portfolio-item-title">
       <h3>{{ this.title }}</h3>
+      <i class="icon-arrow-right"></i>
     </div>
     <div class="portfolio-item-description">
       <p>{{ this.description }}</p>
