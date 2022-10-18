@@ -24,6 +24,11 @@ h1 {
 
     @include for-md {
       font-size: 24px;
+      padding: 30px 0;
+    }
+
+    @include for-xl {
+      font-size: 24px;
       padding: 35px 0;
     }
   }

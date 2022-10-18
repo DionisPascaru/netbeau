@@ -8,9 +8,12 @@
     .el-menu {
       display: flex;
       align-items: center;
-      gap: 45px;
       border-right: none;
       height: 100%;
+
+      @include for-xl {
+        gap: 45px;
+      }
     }
 
     .nav-menu-right {

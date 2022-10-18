@@ -28,6 +28,12 @@
       width: 33.3%;
       text-align: unset;
     }
+
+    .text-deep {
+      @include for-xl {
+        max-width: 340px;
+      }
+    }
   }
 
   .section {

@@ -1,0 +1,160 @@
+.contact {
+  .page-heading {
+    padding-bottom: 60px;
+
+    @include for-md {
+      padding-bottom: 80px;
+    }
+
+    @include for-xl {
+      padding-bottom: 120px;
+    }
+
+    h1 {
+      font-size: 55px;
+
+      @include for-ssm {
+        font-size: 70px;
+      }
+
+      @include for-sm {
+        font-size: 100px;
+      }
+
+      @include for-md {
+        font-size: 130px;
+      }
+
+      @include for-lg {
+        font-size: 180px;
+      }
+
+      @include for-xl {
+        font-size: 200px;
+      }
+
+      @include for-xxl {
+        font-size: 250px;
+      }
+    }
+  }
+
+  .contact-section {
+    padding: 40px 0;
+  }
+
+  .contact-data {
+    display: flex;
+    flex-direction: column;
+
+
+    @include for-md {
+      flex-direction: row;
+      gap: 50px;
+    }
+  }
+
+  .contact-address {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    @include for-md {
+      display: block;
+    }
+  }
+
+  .contact-phone {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    @include for-md {
+      display: block;
+    }
+
+    .contact-text-normal {
+      font-family: 'Jost', sans-serif;
+    }
+  }
+
+  .contact-email {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    @include for-md {
+      display: block;
+    }
+  }
+
+  .contact-text-dingy {
+    color: $--second-color;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px 0;
+    line-height: 1;
+
+    @include for-md {
+      font-size: 20px;
+    }
+
+    @include for-lg {
+      font-size: 40px;
+    }
+  }
+
+  .contact-text-normal {
+    color: $--second-color;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 0;
+
+    @include for-md {
+      font-size: 20px;
+    }
+
+    @include for-lg {
+      font-size: 24px;
+    }
+  }
+
+  .contact-text-deep {
+    color: $--light-grey;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0;
+
+    @include for-md {
+      font-size: 16px;
+    }
+  }
+
+  .contact-img {
+    margin-bottom: 60px;
+
+    @include for-lg {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .contact-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+  }
+
+  .reversible-section {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include for-lg {
+      flex-direction: row;
+    }
+  }
+}

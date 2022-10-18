@@ -1,7 +1,9 @@
 <template>
-  <div class="items-block">
-    <div class="item" v-for="client in clients" :key="client.id">
-      <img :src="getImgUrl(client.imgPath)" :alt="client.name">
+  <div class="clients-items">
+    <div class="items-block">
+      <div class="item" v-for="client in clients" :key="client.id">
+        <img :src="getImgUrl(client.imgPath)" :alt="client.name">
+      </div>
     </div>
   </div>
 </template>
