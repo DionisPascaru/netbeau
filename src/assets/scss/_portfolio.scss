@@ -1,12 +1,13 @@
 .portfolio {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
   padding-top: 40px;
 
   @include for-md {
-    gap: 20px;
     padding-top: 60px;
+  }
+
+  .el-row {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -49,7 +50,7 @@
 }
 
 .portfolio-item {
-  width: calc(50% - 5px);
+  margin-bottom: 40px;
 
   .portfolio-item-img {
     display: flex;
@@ -73,6 +74,7 @@
       font-size: 16px;
       font-weight: 700;
       text-transform: capitalize;
+      margin: 15px 0;
     }
 
     i {
@@ -98,6 +100,7 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 1.5;
+      margin: 0;
     }
   }
 
@@ -114,7 +117,7 @@
   }
 
   @include for-md {
-    width: calc(50% - 10px);
+    margin-bottom: 60px;
 
     .portfolio-item-img {
       height: 430px;
@@ -122,14 +125,14 @@
   }
 
   @include for-lg {
-    width: calc(25% - 15px);
-
     .portfolio-item-img {
       height: 320px;
     }
   }
 
   @include for-xl {
+    margin-bottom: 80px;
+
     .portfolio-item-img {
       height: 390px;
     }
@@ -138,6 +141,20 @@
   @include for-xxl {
     .portfolio-item-img {
       height: 420px;
+    }
+  }
+}
+
+.portfolio-item_extra-height {
+  @include for-xl {
+    .portfolio-item-img {
+      height: 950px;
+    }
+  }
+
+  @include for-xxl {
+    .portfolio-item-img {
+      height: 990px;
     }
   }
 }
