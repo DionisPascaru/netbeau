@@ -4,6 +4,7 @@ import ServicesView from '../views/ServicesView';
 import TechnologiesView from '../views/TechnologiesView';
 import PortfolioView from '../views/PortfolioView';
 import ContactView from '../views/ContactView';
+import YamminoView from "@/views/projects/YamminoView";
 
 export default [
     {
@@ -35,5 +36,10 @@ export default [
         path: '/contact',
         name: 'ContactView',
         component: ContactView
+    },
+    {
+        path: '/yammino',
+        name: 'YamminoView',
+        component: YamminoView
     }
 ];

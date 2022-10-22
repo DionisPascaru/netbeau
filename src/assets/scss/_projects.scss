@@ -1,0 +1,135 @@
+.project-heading {
+  h1 {
+    font-size: 70px;
+    font-weight: 700;
+  }
+}
+
+.project-banner {
+  img {
+    width: 100%;
+  }
+}
+
+.project-section {
+  padding: 45px 0;
+
+  @include for-md {
+    padding: 60px 0;
+  }
+}
+
+.project-description {
+  padding-bottom: 45px;
+
+  @include for-md {
+    padding-bottom: 60px;
+  }
+
+  h2 {
+    margin: 0 0 25px;
+    font-size: 24px;
+    font-weight: 700;
+    color: $--second-color;
+
+    @include for-md {
+      font-size: 40px;
+    }
+  }
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @include for-md {
+    gap: 20px;
+  }
+}
+
+.project-small-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($--light-grey, 0.2);
+  padding: 60px 0;
+
+  @include for-md {
+    width: calc(50% - 10px);
+    padding: 80px 0;
+  }
+
+  img {
+    max-width: 156px;
+    width: 100%;
+
+    @include for-md {
+      max-width: 205px;
+    }
+
+    @include for-xl {
+      max-width: 230px;
+    }
+  }
+}
+
+.project-full-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($--light-grey, 0.2);
+  padding: 40px 0;
+
+  @include for-md {
+    padding: 80px 0;
+  }
+
+  img {
+    max-width: 240px;
+    width: 100%;
+
+    @include for-md {
+      max-width: 550px;
+    }
+
+    @include for-xl {
+      max-width: 690px;
+    }
+  }
+}
+
+.contact-us-section {
+  max-width: 900px;
+  padding: 45px 0 90px;
+  margin: auto;
+
+  @include for-md {
+    padding: 60px 0 120px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+
+    @include for-md {
+      font-size: 20px;
+    }
+
+    @include for-xl {
+      font-size: 24px;
+    }
+  }
+
+  button {
+    margin: auto;
+  }
+}
