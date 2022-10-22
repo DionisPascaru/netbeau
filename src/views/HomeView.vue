@@ -64,22 +64,32 @@
           <button class="btn">All works  <i class="icon-arrow-right"></i></button>
         </div>
         <div class="portfolio">
-          <portfolio-item-component image-url="yammino.png"
-                                    title="YAMMINO.MD"
-                                    description="Programming for Yammino.md">
-          </portfolio-item-component>
-          <portfolio-item-component image-url="yammino.png"
-                                    title="YAMMINO.MD"
-                                    description="Programming for Yammino.md">
-          </portfolio-item-component>
-          <portfolio-item-component image-url="yammino.png"
-                                    title="YAMMINO.MD"
-                                    description="Programming for Yammino.md">
-          </portfolio-item-component>
-          <portfolio-item-component image-url="yammino.png"
-                                    title="YAMMINO.MD"
-                                    description="Programming for Yammino.md">
-          </portfolio-item-component>
+          <el-row :gutter="10">
+            <el-col :lg="6" :span="12">
+              <portfolio-item-component image-url="yammino.png"
+                                        title="YAMMINO"
+                                        description="Programming for Yammino.md">
+              </portfolio-item-component>
+            </el-col>
+            <el-col :lg="6" :span="12">
+              <portfolio-item-component image-url="iticket.png"
+                                        title="ITICKET"
+                                        description="Site for iTicket.md">
+              </portfolio-item-component>
+            </el-col>
+            <el-col :lg="6" :span="12">
+              <portfolio-item-component image-url="realadvent.png"
+                                        title="REALADVENT"
+                                        description="Site for Realadvent Imobil Grup">
+              </portfolio-item-component>
+            </el-col>
+            <el-col :lg="6" :span="12">
+              <portfolio-item-component image-url="mobias-banca.png"
+                                        title="MOBIAS BANCA"
+                                        description="Programming for Mobias banca">
+              </portfolio-item-component>
+            </el-col>
+          </el-row>
         </div>
       </div>
       <div class="section-mover">
