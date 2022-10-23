@@ -4,6 +4,7 @@ import ServicesView from '../views/ServicesView';
 import TechnologiesView from '../views/TechnologiesView';
 import PortfolioView from '../views/PortfolioView';
 import ContactView from '../views/ContactView';
+import ProjectDetailsComponent from "@/components/portfolio/ProjectDetailsComponent";
 
 export default [
     {
@@ -29,7 +30,12 @@ export default [
     {
         path: '/portfolio',
         name: 'PortfolioView',
-        component: PortfolioView
+        component: PortfolioView,
+    },
+    {
+        path: '/portfolio/:id/:slug',
+        name: 'ProjectDetailsComponent',
+        component: ProjectDetailsComponent
     },
     {
         path: '/contact',

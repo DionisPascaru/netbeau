@@ -1,0 +1,193 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Yammino",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "banner": "yammino/yammino.png",
+      "macbookImages": [
+        "yammino/yammino-mac-book.png"
+      ],
+      "iphoneImages": [
+        "yammino/iphone1.png",
+        "yammino/iphone2.png",
+        "yammino/iphone3.png",
+        "yammino/iphone4.png"
+      ],
+      "desktopImages": [
+        "yammino/index1.png",
+        "yammino/index2.png"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Iticket",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "banner": "iticket/iticket.png",
+      "macbookImages": [
+        "iticket/MacBook.png"
+      ],
+      "iphoneImages": [
+        "iticket/iphone1.png",
+        "iticket/iphone2.png",
+        "iticket/iphone3.png",
+        "iticket/iphone4.png"
+      ],
+      "desktopImages": [
+        "iticket/index1.png",
+        "iticket/index2.png"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Realadvent",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "banner": "realadvent/realadvent.png",
+      "macbookImages": [
+        "realadvent/MacBook.png"
+      ],
+      "desktopImages": [
+        "realadvent/index1.png",
+        "realadvent/index2.png"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Mobias Banca",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "banner": "mobias-banca/mobias-banca.png",
+      "macbookImages": [
+        "mobias-banca/MacBook.png"
+      ],
+      "desktopImages": [
+        "mobias-banca/index1.png",
+        "mobias-banca/index2.png",
+        "mobias-banca/index3.png"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Elite Car Service",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "banner": "elite-car-service/elite-car.png",
+      "macbookImages": [
+        "elite-car-service/MacBook.png"
+      ],
+      "iphoneImages": [
+        "elite-car-service/iphone1.png",
+        "elite-car-service/iphone2.png",
+        "elite-car-service/iphone3.png",
+        "elite-car-service/iphone4.png"
+      ],
+      "desktopImages": [
+        "elite-car-service/index1.png",
+        "elite-car-service/index2.png"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Megadon",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "banner": "megadon/megadon.png",
+      "macbookImages": [
+        "megadon/MacBook.png"
+      ],
+      "iphoneImages": [
+        "megadon/iphone1.png",
+        "megadon/iphone2.png",
+        "megadon/iphone3.png",
+        "megadon/iphone4.png"
+      ],
+      "desktopImages": [
+        "megadon/index1.png",
+        "megadon/index2.png"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Bronks taxi",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "banner": "bronks-taxi/bronks-taxi.png",
+      "macbookImages": [
+        "bronks-taxi/MacBook.png"
+      ],
+      "iphoneImages": [
+        "bronks-taxi/iphone1.png",
+        "bronks-taxi/iphone2.png",
+        "bronks-taxi/iphone3.png",
+        "bronks-taxi/iphone4.png"
+      ],
+      "desktopImages": [
+        "bronks-taxi/index1.png",
+        "bronks-taxi/index2.png"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Jewishmuseum",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "banner": "jewishmuseum/jewishmuseum.png",
+      "macbookImages": [
+        "jewishmuseum/MacBook.png"
+      ],
+      "desktopImages": [
+        "jewishmuseum/jewishmuseum1.png",
+        "jewishmuseum/jewishmuseum2.png",
+        "jewishmuseum/jewishmuseum3.png"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Vladalina",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "banner": "vladalina/vladalina.png",
+      "macbookImages": [
+        "vladalina/MacBook.png"
+      ],
+      "iphoneImages": [
+        "vladalina/iphone1.png",
+        "vladalina/iphone2.png",
+        "vladalina/iphone3.png",
+        "vladalina/iphone4.png"
+      ],
+      "desktopImages": [
+        "vladalina/index1.png",
+        "vladalina/index2.png"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Jackson hole maids",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "banner": "jackson-hole-maids/jackson-hole-maids.png",
+      "macbookImages": [
+        "jackson-hole-maids/MacBook.png"
+      ],
+      "iphoneImages": [
+        "jackson-hole-maids/iphone1.png",
+        "jackson-hole-maids/iphone2.png"
+      ],
+      "desktopImages": [
+        "jackson-hole-maids/index1.png",
+        "jackson-hole-maids/index2.png"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Urbanconstruct TT",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "banner": "urbanconstruct/urbanconstruct-tt.png",
+      "macbookImages": [
+        "urbanconstruct/MacBook.png"
+      ],
+      "iphoneImages": [
+        "urbanconstruct/iphone1.png",
+        "urbanconstruct/iphone2.png"
+      ],
+      "desktopImages": [
+        "urbanconstruct/index1.png",
+        "urbanconstruct/index2.png"
+      ]
+    }
+  ]
+}

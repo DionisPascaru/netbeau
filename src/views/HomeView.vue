@@ -4,12 +4,12 @@
       <div class="page-heading">
         <h1>We create next generation websites.</h1>
       </div>
-      <div class="section-mover">
+      <div class="section-mover" @click="goToSection('AboutRef')">
         <span>About Us</span>
         <i class="icon-arrow-down"></i>
       </div>
     </section><!-- Page heading -->
-    <section class="border-bottom">
+    <section class="border-bottom" ref="AboutRef">
       <div class="section">
         <div class="label">
           <span class="text-dark">About Us</span>
@@ -22,8 +22,9 @@
                 honest partner in more than 500 successful projects.
               </p>
               <button class="btn" v-if="!isMobile">
-                Read more
-                <i class="icon-arrow-right"></i>
+                <router-link :to="{ name: 'AboutView'}">
+                  Read more <i class="icon-arrow-right"></i>
+                </router-link>
               </button>
             </el-col>
             <el-col :lg="16">
@@ -42,14 +43,18 @@
             </el-col>
           </el-row>
         </div>
-        <button class="btn" v-if="isMobile">Read more <i class="icon-arrow-right"></i></button>
+        <button class="btn" v-if="isMobile">
+          <router-link :to="{ name: 'AboutView'}">
+            Read more <i class="icon-arrow-right"></i>
+          </router-link>
+        </button>
       </div>
-      <div class="section-mover">
+      <div class="section-mover" @click="goToSection('WorksRef')">
         <span>Favorite works</span>
         <i class="icon-arrow-down"></i>
       </div>
     </section><!-- About us -->
-    <section class="border-bottom">
+    <section class="border-bottom" ref="WorksRef">
       <div class="section">
         <div class="label">
           <span class="text-dark">Favorite Works</span>
@@ -61,30 +66,42 @@
               Check out some of our selected works throughout history.
             </p>
           </div>
-          <button class="btn">All works  <i class="icon-arrow-right"></i></button>
+          <button class="btn">
+            <router-link :to="{ name: 'PortfolioView' }">
+              All works  <i class="icon-arrow-right"></i>
+            </router-link>
+          </button>
         </div>
         <div class="portfolio">
           <el-row :gutter="10">
             <el-col :lg="6" :span="12">
-              <portfolio-item-component image-url="yammino.png"
+              <portfolio-item-component :entityId="1"
+                                        slug="yammino"
+                                        image-url="yammino/yammino.png"
                                         title="YAMMINO"
                                         description="Programming for Yammino.md">
               </portfolio-item-component>
             </el-col>
             <el-col :lg="6" :span="12">
-              <portfolio-item-component image-url="iticket.png"
+              <portfolio-item-component :entityId="2"
+                                        slug="iticket"
+                                        image-url="iticket/iticket.png"
                                         title="ITICKET"
                                         description="Site for iTicket.md">
               </portfolio-item-component>
             </el-col>
             <el-col :lg="6" :span="12">
-              <portfolio-item-component image-url="realadvent.png"
+              <portfolio-item-component :entityId="3"
+                                        slug="realadvent"
+                                        image-url="realadvent/realadvent.png"
                                         title="REALADVENT"
                                         description="Site for Realadvent Imobil Grup">
               </portfolio-item-component>
             </el-col>
             <el-col :lg="6" :span="12">
-              <portfolio-item-component image-url="mobias-banca.png"
+              <portfolio-item-component :entityId="4"
+                                        slug="mobias-banca"
+                                        image-url="mobias-banca/mobias-banca.png"
                                         title="MOBIAS BANCA"
                                         description="Programming for Mobias banca">
               </portfolio-item-component>
@@ -92,12 +109,12 @@
           </el-row>
         </div>
       </div>
-      <div class="section-mover">
+      <div class="section-mover" @click="goToSection('PortfolioRef')">
         <span>What we do</span>
         <i class="icon-arrow-down"></i>
       </div>
     </section><!-- Portfolio -->
-    <section class="border-bottom">
+    <section class="border-bottom" ref="PortfolioRef">
       <div class="section">
         <div class="label">
           <span class="text-dark">What we do</span>
@@ -107,7 +124,11 @@
             <div>
               <h2>Our services</h2>
               <p class="text-deep">We leverage advanced technology to deliver solutions that exceed expectations.</p>
-              <button class="btn">Read more  <i class="icon-arrow-right"></i></button>
+              <button class="btn">
+                <router-link :to="{ name: 'ServicesView'}">
+                  Read more  <i class="icon-arrow-right"></i>
+                </router-link>
+              </button>
             </div>
           </el-col>
           <el-col :lg="16">
@@ -115,12 +136,12 @@
           </el-col>
         </el-row>
       </div>
-      <div class="section-mover">
+      <div class="section-mover" @click="goToSection('ClientsRef')">
         <span>Our clients</span>
         <i class="icon-arrow-down"></i>
       </div>
     </section><!-- Services -->
-    <section class="section">
+    <section class="section" ref="ClientsRef">
       <div class="label">
         <span class="text-dark">Our client</span>
       </div>
@@ -161,5 +182,15 @@ export default {
       this.windowWidth = window.innerWidth;
     });
   },
+  methods: {
+    goToSection(value) {
+      const top = this.$refs[(value)].offsetTop;
+      window.scrollTo({
+        top: top,
+        left: 0,
+        behavior: 'smooth'
+      });
+    },
+  }
 }
 </script>
