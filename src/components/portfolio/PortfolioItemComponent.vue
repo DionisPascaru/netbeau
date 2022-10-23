@@ -4,8 +4,10 @@
         <img :src="this.getImgUrl()">
       </div>
     <div class="portfolio-item-title">
-      <h3>{{ this.title }}</h3>
-      <i class="icon-arrow-right"></i>
+      <router-link :to="{ name: 'ProjectDetailsComponent', params: { id: entityId, slug: slug } }">
+        <h3>{{ this.title }}</h3>
+        <i class="icon-arrow-right"></i>
+      </router-link>
     </div>
     <div class="portfolio-item-description">
       <p>{{ this.description }}</p>
@@ -17,6 +19,12 @@
 export default {
   name: 'PortfolioItemComponent',
   props: {
+    entityId: {
+      type: Number
+    },
+    slug: {
+      type: String
+    },
     imageUrl: {
       type: String
     },

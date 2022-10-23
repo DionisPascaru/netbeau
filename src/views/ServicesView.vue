@@ -1,6 +1,9 @@
 <template>
   <div class="services">
     <div class="container">
+      <div class="btn-back" @click="$router.back()">
+        <i class="icon-arrow-left"></i> Back/Main
+      </div>
       <div class="page-heading">
         <h1>Our services</h1>
       </div>

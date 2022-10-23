@@ -127,16 +127,20 @@ h1 {
 
 /** ----- buttons style ----- **/
 .btn {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 700;
   border: 2px solid $--second-color;
-  color: $--second-color;
   background-color: $--base-color;
   padding: 10px 30px;
   border-radius: 20px;
   margin: 25px 0;
+
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: $--second-color;
+  }
 
   @include for-md {
     font-size: 16px;
@@ -161,11 +165,45 @@ h1 {
   }
 }
 
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: $--second-color;
+  background-color: $--base-color;
+  margin: 10px 0;
+
+  @include for-md {
+    font-size: 16px;
+    margin: 25px 0;
+  }
+
+  i {
+    font-size: 14px;
+    margin-right: 10px;
+    transition: .5s ease-in-out;
+
+    &::before {
+      color: $--second-color;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    i {
+      transform: translateX(-10px);
+    }
+  }
+}
+
 .section-mover {
   display: flex;
-  justify-content: end;
   align-items: center;
+  width: fit-content;
   padding: 10px 0 40px;
+  margin-left: auto;
 
   span {
     font-size: 14px;

@@ -1,6 +1,9 @@
 <template>
   <div class="contact">
     <div class="container">
+      <div class="btn-back" @click="$router.back()">
+        <i class="icon-arrow-left"></i> Back/Main
+      </div>
       <div class="page-heading border-bottom">
         <h1>Contact us</h1>
       </div>
