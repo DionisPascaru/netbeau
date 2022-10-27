@@ -27,8 +27,13 @@ export default {
     switcher() {
       this.modeValue = !this.modeValue;
 
+      // save mode value in local storage
       this.storeMode(this.modeKey, this.modeValue)
 
+      // send mode value in vuex store
+      this.$store.dispatch('darkLightMode/setMode', this.modeValue);
+
+      // set base and second color on root
       this.switchThemeMode();
     },
     switchThemeMode() {
