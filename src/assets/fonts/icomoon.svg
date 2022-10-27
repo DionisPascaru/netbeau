@@ -20,4 +20,5 @@
 <glyph unicode="&#xe90a;" glyph-name="arrow-right" d="M512 384h-512v128h512v448l512-512-512-512v448z" />
 <glyph unicode="&#xe90b;" glyph-name="arrow-down" horiz-adv-x="1088" d="M639.875 448h447.997l-511.997-512-512 512h448v512h128v-512z" />
 <glyph unicode="&#xe90c;" glyph-name="arrow-left" d="M512 384v-448l-512 512 512 512v-448h512v-128h-512z" />
+<glyph unicode="&#xe90d;" glyph-name="arrow-up" d="M576 448v-512h-128v512h-448l512 512 512-512h-448z" />
 </font></defs></svg>

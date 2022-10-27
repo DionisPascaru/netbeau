@@ -233,3 +233,39 @@ h1 {
     }
   }
 }
+
+.move-up-button {
+  width: 56px;
+  height: 56px;
+  border: 2px solid $--second-color;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 1;
+
+  @include for-md {
+    right: 60px;
+    bottom: 60px;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    i {
+      transform: translateY(-10px);
+    }
+  }
+
+  i {
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+
+    &::before {
+      color: $--second-color;
+    }
+  }
+}
