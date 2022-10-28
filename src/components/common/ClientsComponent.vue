@@ -14,13 +14,14 @@
 </template>
 
 <script>
-import { clientsWithe, clientsBlack } from './../../data/clients.json';
+import clientsData from './../../data/clients.json';
+
 export default {
   name: 'ClientsComponent',
   data() {
     return {
-      clientsWithe: clientsWithe,
-      clientsBlack: clientsBlack
+      clientsWithe: clientsData.clientsWithe,
+      clientsBlack: clientsData.clientsBlack
     }
   },
   computed: {
