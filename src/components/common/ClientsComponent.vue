@@ -1,11 +1,11 @@
 <template>
   <div class="clients-items">
-    <div class="items-block" v-if="!mode">
+    <div class="items-block" v-if="!this.mode">
       <div class="item" v-for="client in clientsWithe" :key="client.id">
         <img :src="getImgUrl(client.imgPath)" :alt="client.name">
       </div>
     </div>
-    <div class="items-block" v-if="mode">
+    <div class="items-block" v-if="this.mode">
       <div class="item" v-for="client in clientsBlack" :key="client.id">
         <img :src="getImgUrl(client.imgPath)" :alt="client.name">
       </div>
@@ -14,13 +14,14 @@
 </template>
 
 <script>
-import { clientsWithe, clientsBlack } from './../../data/clients.json';
+import clientsData from './../../data/clients.json';
+
 export default {
   name: 'ClientsComponent',
   data() {
     return {
-      clientsWithe: clientsWithe,
-      clientsBlack: clientsBlack
+      clientsWithe: clientsData.clientsWithe,
+      clientsBlack: clientsData.clientsBlack
     }
   },
   computed: {
