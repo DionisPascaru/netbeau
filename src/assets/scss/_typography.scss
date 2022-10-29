@@ -6,12 +6,15 @@ h1 {
   text-align: start;
   font-weight: 700;
   margin: 20px 0;
+  width: 320px;
 
   @include for-md {
+    width: 520px;
     font-size: 70px;
   }
 
   @include for-xl {
+    width: auto;
     font-size: 150px;
   }
 }
