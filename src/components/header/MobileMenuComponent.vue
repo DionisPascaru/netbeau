@@ -8,7 +8,9 @@
         <span class="line"></span>
         <span class="line"></span>
       </div>
-      <logo-component @click="this.collapseMenu"></logo-component>
+      <div @click="isActive = false">
+        <logo-component></logo-component>
+      </div>
       <dark-light-mode-component></dark-light-mode-component>
     </div>
     <div class="nav-wrapper-mobile" :class="{active: this.isActive}">
