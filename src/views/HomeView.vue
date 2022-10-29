@@ -2,7 +2,7 @@
   <div class="container">
     <section class="border-bottom">
       <div class="page-heading">
-        <h1>We create next generation websites.</h1>
+        <h1>We create next generation <span class="top-right-arrow"><i class="icon-arrow-up-alt"></i></span> websites.</h1>
       </div>
       <div class="section-mover" @click="goToSection('AboutRef')">
         <span>About Us</span>
